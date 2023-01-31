@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: black;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: blueviolet;
+}
+
+.nav-link:hover {
+    color: blueviolet;
+    transition: 0.5s ease;
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: rgba(132, 0, 255, 0.432);
+
+}
+
+.dropdown-item:hover {
+    color: blueviolet;
+    transition: 0.5s ease;
+}
+
+.hero {
+    width: 100%;
+    height: 87vh;
+    background-image: linear-gradient(#000000b4, #000000b4), url("../resources/tshirt-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__text {
+    color: #fafafa;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "."
+        "."
+        "contact";
+    flex-direction: column;
+
+
+}
+
+.gridcontainer__samples {
+    background-image: linear-gradient(#d826c973, #7022c971), url("../resources/muestras-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridcontainer__samples:hover {
+    background-image: linear-gradient(#000000b4, #000000b4), url("../resources/muestras-img.jpg");
+
+}
+
+.gridcontainer__samples h2 {
+    color: #fafafa;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.gridcontainer__catalogue {
+    background-image: linear-gradient(#7022c971, #d826c973), url("../resources/catalogo-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridcontainer__catalogue:hover {
+    background-image: linear-gradient(#000000b4, #000000b4), url("../resources/catalogo-img.jpg");
+
+}
+
+.gridcontainer__catalogue h2 {
+    color: #fafafa;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.gridcontainer__contact {
+    grid-area: contact;
+    background-image: url("../resources/darkness.webp");
+    background-repeat: repeat;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.gridcontainer__contact h2 {
+    color: #fafafa;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.gridcontainer__contact form button {
+
+    background-color: rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #fafafa;
+    padding: 0.3rem;
+}
+
+.gridcontainer__contact form button:hover {
+    background: linear-gradient(#7022c971, #d826c973);
+    font-weight: 900;
+}
+
+
+/* ============================ medias querys ========================= */
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 8rem;
+        grid-template-areas:
+            ". ."
+            "contact contact";
+        flex-direction: row;
+    }
+
+    .gridcontainer__contact h2 {
+        font-size: 2rem;
+    }
+
+    .gridcontainer__contact form button {
+        font-size: 1rem;
+    }
+
+}
