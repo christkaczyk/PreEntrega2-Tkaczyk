@@ -135,11 +135,10 @@ body {
 
     background-color: rgba(0, 0, 0, 0);
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     border: 1px solid white;
-    border-radius: 5px;
     color: #fafafa;
-    padding: 0.3rem;
+    padding: 0.5rem;
 }
 
 .gridcontainer__contact form button:hover {
@@ -147,6 +146,31 @@ body {
     font-weight: 900;
 }
 
+.footer {
+    background-color: #fafafa;
+    height: 14rem;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.footer__info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__info ul li a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.authorname {
+    color: #6a14d1;
+}
 
 /* ============================ medias querys ========================= */
 
