@@ -71,7 +71,6 @@ html {
         "."
         "."
         "contact";
-    flex-direction: column;
     align-content: center;
     justify-items: center;
 }
@@ -134,8 +133,6 @@ html {
 
 .gridcontainer__contact {
     grid-area: contact;
-    /* background-image: url("../resources/darkness.webp");
-    background-repeat: repeat; */
     height: 8rem;
     display: flex;
     align-items: center;
@@ -153,7 +150,6 @@ html {
 }
 
 .gridcontainer__contact form button {
-
     background-color: rgba(0, 0, 0, 0);
     text-transform: uppercase;
     font-size: 0.6rem;
@@ -163,7 +159,7 @@ html {
 }
 
 .gridcontainer__contact form button:hover {
-    background: linear-gradient(#7022c971, #d826c973);
+    background: #6a14d1;
     font-weight: 900;
 }
 
