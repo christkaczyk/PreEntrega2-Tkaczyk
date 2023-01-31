@@ -68,7 +68,7 @@ body {
 }
 
 .gridcontainer__samples {
-    background-image: linear-gradient(#d826c973, #7022c971), url("../resources/muestras-img.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../resources/muestras-img.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -80,7 +80,7 @@ body {
 }
 
 .gridcontainer__samples:hover {
-    background-image: linear-gradient(#000000b4, #000000b4), url("../resources/muestras-img.jpg");
+    background-image: linear-gradient(0deg, rgba(209, 24, 209, 0.5), rgba(113, 23, 198, 0.5)), url("../resources/muestras-img.jpg");
     transform: scale(1.05);
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 .gridcontainer__catalogue {
-    background-image: linear-gradient(#7022c971, #d826c973), url("../resources/catalogo-img.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../resources/catalogo-img.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -105,7 +105,7 @@ body {
 }
 
 .gridcontainer__catalogue:hover {
-    background-image: linear-gradient(#000000b4, #000000b4), url("../resources/catalogo-img.jpg");
+    background-image: linear-gradient(0deg, rgba(209, 24, 209, 0.5), rgba(113, 23, 198, 0.5)), url("../resources/catalogo-img.jpg");
     transform: scale(1.05);
 }
 
