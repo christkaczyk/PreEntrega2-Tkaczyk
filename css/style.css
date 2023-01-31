@@ -10,6 +10,15 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     background-color: black;
+    height: 100%;
+    background-image: url("../resources/darkness.webp");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+html {
+    height: 100%;
 }
 
 .navbar-nav .nav-link.active,
@@ -35,12 +44,8 @@ body {
     width: 100%;
     height: 87vh;
     background-image: linear-gradient(#000000b4, #000000b4), url("../resources/tshirt-bg.jpg");
-    /* background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
-    background-attachment: fixed;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -67,17 +72,20 @@ body {
         "."
         "contact";
     flex-direction: column;
-
-
+    align-content: center;
+    justify-items: center;
 }
 
 .gridcontainer__samples {
+    margin: 10px;
+    border-radius: 30px;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../resources/muestras-img.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     transition: transform .2s;
-    height: 15rem;
+    width: 98%;
+    height: 14rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,7 +93,7 @@ body {
 
 .gridcontainer__samples:hover {
     background-image: linear-gradient(0deg, rgba(209, 24, 209, 0.5), rgba(113, 23, 198, 0.5)), url("../resources/muestras-img.jpg");
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .gridcontainer__samples h2 {
@@ -97,12 +105,15 @@ body {
 }
 
 .gridcontainer__catalogue {
+    margin: 10px;
+    border-radius: 30px;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../resources/catalogo-img.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     transition: transform .2s;
-    height: 15rem;
+    width: 98%;
+    height: 14rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,7 +121,7 @@ body {
 
 .gridcontainer__catalogue:hover {
     background-image: linear-gradient(0deg, rgba(209, 24, 209, 0.5), rgba(113, 23, 198, 0.5)), url("../resources/catalogo-img.jpg");
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .gridcontainer__catalogue h2 {
@@ -123,8 +134,8 @@ body {
 
 .gridcontainer__contact {
     grid-area: contact;
-    background-image: url("../resources/darkness.webp");
-    background-repeat: repeat;
+    /* background-image: url("../resources/darkness.webp");
+    background-repeat: repeat; */
     height: 8rem;
     display: flex;
     align-items: center;
