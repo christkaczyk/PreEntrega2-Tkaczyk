@@ -225,6 +225,7 @@ footer {
 }
 
 .section__formContact {
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -232,8 +233,10 @@ footer {
 }
 
 .section__formContact h1 {
+    color: #fafafa;
     text-transform: uppercase;
-    margin: 20px 0px;
+    text-align: center;
+    margin: 2rem;
 }
 
 .section__form {
@@ -263,21 +266,46 @@ textarea {
 }
 
 #btn {
-    background-image: linear-gradient(45deg, rgba(255, 0, 200, 0.6), rgba(140, 0, 255, 0.6));
-    background-color: #6a14d1;
+    background-image: linear-gradient(45deg, rgba(255, 0, 200, 0.088), rgba(140, 0, 255, 0.116));
+    background-color: #6914d160;
     color: #fafafa;
     font-size: 15px;
     text-transform: uppercase;
     padding: 10px;
     margin-top: 10px;
     letter-spacing: 2px;
+    transition: transform .2s;
 }
 
 #btn:hover {
     cursor: pointer;
-    font-weight: 400;
+    background-image: linear-gradient(45deg, rgba(255, 0, 200, 0.467), rgba(140, 0, 255, 0.467));
+    transform: scale(1.04);
 }
 
+/* ============================== pagina muestras ======================== */
+
+.gallery__container {
+    display: grid;
+    padding: 6rem 1.7rem 1.7rem 1.7rem;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 11rem;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .2s ease;
+}
+
+.gallery__img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* ============================== pagina muestras ======================== */
 
 /* ============================ medias querys ========================= */
 
@@ -304,6 +332,14 @@ textarea {
 
     .gridcontainer__contact form button {
         font-size: 1rem;
+    }
+
+    .gallery__container {
+        display: grid;
+        padding: 6rem 1.7rem 1.7rem 1.7rem;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 15rem;
     }
 
 }
