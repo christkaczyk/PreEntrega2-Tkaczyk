@@ -21,6 +21,11 @@ html {
     height: 100%;
 }
 
+ol,
+ul {
+    padding-left: 0;
+}
+
 .navbar-nav .nav-link.active,
 .navbar-nav .show>.nav-link {
     color: blueviolet;
@@ -163,32 +168,6 @@ html {
 .gridcontainer__contact form button:hover {
     background: #6a14d1;
     font-weight: 900;
-}
-
-.footer {
-    background-color: white;
-    height: 14rem;
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-
-}
-
-.footer__info {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer__info ul li a {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
-
-.authorname {
-    color: #6a14d1;
 }
 
 /* ============================ medias querys ========================= */
