@@ -297,12 +297,12 @@ textarea {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform .2s ease;
 }
 
 .gallery__img:hover {
     cursor: pointer;
-    transform: scale(1.3);
+    transform: scale(1.2);
+    transition: transform .5s ease;
 }
 
 /* ============================== pagina muestras ======================== */
